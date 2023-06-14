@@ -4,11 +4,11 @@ import { useState } from "react";
 
 export default function ChatPage() {
   const [message, setMessage] = useState("");
-  const handleSubmit = (e)=>{
+  const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(message)
-  }
-  
+    console.log(message);
+  };
+
   return (
     <div className="h-screen w-full">
       <Head>
@@ -18,14 +18,13 @@ export default function ChatPage() {
         <ChatSideBar />
         <div className="grid grid-rows-[1fr_100px] bg-gray-700">
           <div>hello</div>
-          <footer className="bg-gray-800 p-10">
+          <footer className="bg-gray-800 p-7">
             <form onSubmit={handleSubmit}>
               <fieldset className="flex gap-2">
                 <textarea
-                placeholder="Send a message ..."
-                className="w-full resize-none rounded-md bg-gray-700  text-white focus:border-emerald-500  focus:outline focus:outline-emerald-500"
-                onChange={e=>setMessage(e.target.value)}
-
+                  placeholder="Send a message ..."
+                  className="w-full resize-none rounded-md bg-gray-700  text-white focus:border-emerald-500  focus:outline focus:outline-emerald-500"
+                  onChange={(e) => setMessage(e.target.value)}
                 />
 
                 <button type="submit" className="btn">
