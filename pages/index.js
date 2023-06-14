@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
 import { useUser } from "@auth0/nextjs-auth0/client";
-import SignInPage from "./components/SignInPage";
+
 import { getSession } from "@auth0/nextjs-auth0";
+import SignInPage from "components/SignInPage";
 
 export default function Home() {
   const { user, error, isLoading } = useUser();
