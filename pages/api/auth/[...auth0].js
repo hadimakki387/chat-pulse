@@ -1,3 +1,6 @@
-import { handleAuth } from "@auth0/nextjs-auth0";
+import { handleAuth , handleLogin} from "@auth0/nextjs-auth0";
 
-export default handleAuth();
+export default handleAuth({
+    //hon bas badna n3mol custom routes
+    signup: handleLogin({authorizationParams:{screen_hint: "signup"}})
+});
