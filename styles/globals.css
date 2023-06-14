@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components{
+    .btn{
+        @apply rounded-md bg-green-700 px-8 py-2 transition-all duration-200 hover:bg-green-600 text-white
+    }
+}
