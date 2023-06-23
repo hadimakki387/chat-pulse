@@ -1,0 +1,136 @@
+
+.AboutBody {
+  margin: auto;
+  color: rgb(214, 214, 214);
+  line-height: 2.5;
+  
+}
+
+
+
+.AboutArticle {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+:root {
+  --bg: #020a13;
+  --cw: #e1e1e1;
+  --article-color: #c6c6c6;
+  --token: #999;
+  --mark: #080f18;
+  --timeline: #ffffff5e;
+}
+
+.AboutUl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.AboutUl.timeline {
+  list-style-type: none;
+  position: relative;
+}
+
+.AboutUl.timeline:before {
+  content: " ";
+  background: var(--timeline);
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  width: 1px;
+  top: 4px;
+  height: 100%;
+  z-index: 400;
+}
+
+.AboutUl.timeline li {
+  margin: 3rem 0px;
+  padding-left: 20px;
+}
+
+.AboutUl.timeline li:before {
+  content: " ";
+  background: var(--mark);
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid var(--cw);
+  left: -7px;
+  width: 15px;
+  height: 15px;
+  margin-top: 3px;
+  z-index: 400;
+}
+
+.TitleLink {
+  background-color: transparent;
+  color: var(--cw);
+  text-decoration: none;
+  font-family: Blorado, sans-serif;
+  text-rendering: geometricprecision;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.AboutUl.timeline li a {
+  font-size: var(--font-md);
+  font-weight: 500;
+  color: var(--cw);
+}
+
+.TitleLink:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.float-right {
+  float: right !important;
+}
+
+.AboutUl.timeline li a.float-right {
+  text-decoration: underline;
+  font-size: calc(var(--font-sm) + 0.9px);
+}
+
+
+
+small {
+  font-size: 80%;
+  font-weight: 400;
+}
+
+svg {
+  overflow: hidden;
+  vertical-align: middle;
+  fill: var(--article-color);
+}
+
+.AboutUl.timeline li a svg {
+  margin-top: -0.4rem;
+  width: 13px;
+}
+
+b {
+  font-weight: bolder;
+  font-family: Blorado, sans-serif;
+  text-rendering: geometricprecision;
+  color: var(--cw);
+}
+
+.AboutTitle {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.TitleAndEndDate{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width:680px){
+  .TitleAndEndDate{
+    display: grid;
+  }
+}

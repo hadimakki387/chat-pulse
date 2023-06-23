@@ -1,0 +1,272 @@
+body{
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+}
+
+/* this is the navbar */
+
+
+#navbar{
+  background-color: black;
+  padding-left: 1rem;
+  
+ 
+}
+
+li{
+    margin:  0.4rem ;
+    display: inline-block;
+    list-style: none;
+    color: white;
+    
+}
+
+:hover.nav-link{
+  background-color: rgb(145, 145, 145);
+  border-radius: 4%;
+}
+.links{
+    color: white;
+    text-decoration: none;
+   padding: 1.1rem 1.5rem;
+}
+
+:hover.links{
+    background-color: white;
+    color: black;
+}
+
+
+  
+  
+/* this is the caousel */
+
+  .text{
+    position: relative;
+    bottom: 8rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+    .carousel{
+    margin-bottom: 3rem;
+  }
+
+  /* this is the whos singing part */
+
+
+  .singers{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .title{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+  }
+
+  .small-text{
+    font-family: 'Lato', sans-serif;
+    color: grey;
+    line-height: 4;
+  }
+  .main-text{
+    width: 50%;
+    position: relative;
+    left: 24%;
+  }
+
+  .singer-imagers{
+    width: 33%;
+    float: left;
+  }
+  
+  .main-pics{
+    margin-right: 4rem;
+    padding: 7rem 0 7rem 11rem;
+    display: block;
+  }
+
+  /* this is the tickets part */
+
+.tickets{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 2rem;
+    margin-top: 2rem;
+}
+
+
+.available-tickets{
+    background-color: white;
+    color: rgb(71, 71, 71);
+    font-weight: bold;
+    padding-top: 0.6rem;
+    padding-left: 2rem;
+    width: 41.5%;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 2%;
+}
+
+.availability{
+    margin-left: 3rem;
+    padding: 0.3rem;
+    background-color: red;
+    color:white;
+}
+#tickets-to-buy{
+    width: 50%;
+}
+ 
+.tickets-images{
+  width: 15rem;
+}
+
+:hover.tickets-images{
+  opacity: 70%;
+}
+
+.tickets-layouts{
+  text-align: left;
+  width: 15rem;
+  background-color: white;
+  color: black;
+  padding: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.tickets-main{
+  display: inline-block;
+  margin: 0 0.9rem;
+  
+}
+.tickets-btns{
+  background-color: black;
+  color: white;
+ 
+}
+
+:hover.tickets-btns{
+  background-color: white;
+  color: black;
+}
+
+/* this is the contact page */
+
+.contact{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+
+}
+.contact-me {
+  text-align: left;
+  display: inline-block;
+  margin-right: 1rem;
+  
+  
+}
+
+.message-form{
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  top: 2.2rem;
+}
+
+#first-input{
+  
+  width: 50%;
+  display: inline-block;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  
+}
+#second-input{
+  
+  width: 50%;
+  display: inline-block;
+  float: right;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+ 
+  
+}
+#text-area{
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.map-img{
+  width: 121rem ;
+  margin-top: 3rem;
+}
+
+.social-media{
+  text-align: center;
+  margin: 4rem;
+  
+}
+
+.icons{
+  padding: 0 1rem;
+  color: black;
+}
+:hover.icons{
+  color: rgb(58, 58, 58);
+}
+
+.powered-by{
+  text-align: center;
+  color: rgb(117, 117, 117);
+}
+
+/* Payment Page */
+
+.payment{
+  width: 50%;
+  margin: auto;
+  margin-top: 7%;
+  text-align: center;
+}
+
+.payment-text-icon{
+  display: inline-block;
+  color: white;
+  line-height: 3;
+  padding-left: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.icon-text{
+  background-color: #009688;
+  border-radius: 5px;
+}
+.payment-input{
+  width: 100%;
+}
+table{
+  width: 100%;
+  text-align: left;
+  line-height: 2;
+}
+.payment-button{
+  width: 100%;
+  color: white;
+  background-color: #009688;
+  border: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+:hover.payment-button{
+  background-color: #2aa79a;
+}
+.payment-btn-text{
+  padding-right: 0.5rem;
+}

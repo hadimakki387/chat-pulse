@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&family=Merriweather:wght@300&family=Montserrat:wght@400;900&family=Nunito:wght@300&family=Sacramento&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/69c65b50a4.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+<!-- this is the navbar -->
+<div>
+  <nav class="navbar bg-black navbar-expand-lg navbar-dark ">
+
+    <a href="" class="navbar-brand ms-5" id="brand">BRAND</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ms-auto" id="navlink">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#singers" >BAND</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="" href="#tickets" >TOUR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tickets" >TICKETS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" >CONTACT</a>
+          </li>
+        </ul> 
+
+      </div>
+
+  </nav>
+
+
+
+<!-- This is the looping pics -->
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="pictures/1.jpg" class="d-block w-100" alt="...">
+      <div class="text">
+          <h2>CHICAGO</h2>
+          <p>Thank you,chicago - A night we wont forget </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="pictures/1.jpg" class="d-block w-100" alt="...">
+      <div class="text">
+        <h2>CHICAGO</h2>
+        <p>Thank you,chicago - A night we wont forget </p>
+    </div>
+    </div>
+    
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+<!-- whos singing -->
+
+
+<div class="singers" id="singers">
+    <div>
+    <h1 class="title">THE BAND</h1>
+    <em class="small-text">We love music</em>
+    <p class="main-text">Pellentesque in ipsum id orci porta dapibus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. 
+        Nulla quis lorem ut libero malesuada feugiat. 
+        Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. 
+        Nulla porttitor accumsan tincidunt.</p>
+    </div>
+    <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <p>name</p>
+            <img src="pictures/singer.jpg" alt="">
+          </div>
+          <div class="col">
+            <p>name</p>
+            <img src="pictures/singer.jpg" alt="">
+          </div>
+          <div class="col">
+            <p>name</p>
+            <img src="pictures/singer.jpg" alt="">
+          </div>
+        </div>
+      </div>
+</div>
+
+
+<!-- tickets -->
+<div class="tickets" id="tickets">
+    <div >
+        <h1 class="title">TOUR DATES</h1>
+        <em class="small-text">Remember to book your tickets!</em>
+    </div>
+    <div class="available-tickets">
+      <div class="container px-4 text-center">
+        <div class="row gx-5">
+          <div class="col-lg col-sm-1">
+          <div class="p-2">September</div>
+          </div>
+          <div class="col-lg col-sm-1">
+            <div class="p-2 availability">Sold out</div>
+          </div>
+        </div><hr>
+        <div class="row gx-5">
+          <div class="col-lg col-sm-1">
+          <div class="p-2 ">September</div>
+          </div>
+          <div class="col-lg col-sm-1">
+            <div class="p-2 availability">Sold out</div>
+          </div>
+        </div><hr>
+        <div class="row gx-5">
+          <div class="col-lg col-sm-1">
+          <div class="p-2 ">September</div>
+          </div>
+          <div class="col-lg col-sm-1">
+            <div class="p-2 mb-2 availability">Sold out</div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+   
+
+    
+      
+      <div class="tickets-main" >
+          <img class="tickets-images"  src="pictures/newyork.jpg" alt=""> 
+          <form action="/payment" method="post">
+          <div class="tickets-layouts ">
+            <p>New York</p>
+            <p>Fri 27 Nov 2016</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button type="submit" class="tickets-btns">Buy Tickets</button>
+          </div>
+
+      </div>
+      <div class="tickets-main">
+          <img  class="tickets-images" src="pictures/paris.jpg" alt="">
+          <div class="tickets-layouts ">
+          <p>Paris</p>
+          <p>Fri 27 Nov 2016</p>
+          <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+          <button type="submit" class="tickets-btns">Buy Tickets</button>
+          </div>
+      </div>
+      <div   class="tickets-main">
+          <img class="tickets-images " src="pictures/sanfran.jpg" alt="">
+          <div class="tickets-layouts ">
+          <p>San Francisco</p>
+          <p>Fri 27 Nov 2016</p>
+          <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button type="submit" class="tickets-btns" name="BUY">Buy Tickets</button>
+          </form>
+          
+      </div>
+      </div>
+
+  </div>
+
+
+        
+            
+            
+    </div>
+
+</div>
+
+
+<!-- contact -->
+
+<div class="contact" id="contact">
+
+  <div class="title-contact">
+    <h1 class="title">CONTACT</h1>
+    <em class="small-text">Fan? Drop a note!</em>
+  </div>
+
+  <div class="contact-me">
+    <table>
+      <tr>
+        <td><i class="fa-solid fa-location-pin"></i></td>
+        <td><span>Chicago, US</span></td>
+      </tr>
+      <tr>
+        <td><i class="fa-solid fa-phone"></i></td>
+        <td><span> Phone: +00 151515</span></td>
+      </tr>
+      <tr>
+        <td><i class="fa-solid fa-envelope"></i></td>
+        <td><span>Email: mail@mail.com</span></td>
+      </tr>
+    </table>
+    
+  </div>
+
+  <div class="message-form">
+    <form action="/" method="post">
+      <div >
+        <input type="text" name="name" placeholder="Name"  class=" form-control" id="first-input" autocomplete="off">
+        <input type="email" name="email" placeholder="email" class="form-control"id="second-input" autocomplete="off">
+        <p><textarea name="message" placeholder="message" class="form-control" id="text-area" cols="50" rows="1" autocomplete="off"></textarea></p>
+        <button class="tickets-btns" type="submit">SEND</button>
+      </div>
+    </form>
+  </div>
+
+</div>
+
+<div>
+  <img src="pictures/map.jpg" alt="" class="map-img">
+</div>
+<div class="social-media">
+  <i class="fa-brands fa-twitter fa-2x icons"></i>
+  <i class="fa-brands fa-square-facebook fa-2x icons"></i>
+  <i class="fa-brands fa-square-instagram fa-2x icons"></i>
+</div>
+<p class="powered-by" >PowerdbyHadi</p>
+<script src="index.js"></script>
+
+</div>
+</body>
+</html>

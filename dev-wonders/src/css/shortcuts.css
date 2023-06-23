@@ -1,0 +1,37 @@
+.flex {
+  display: flex;
+}
+.white {
+  color: white;
+}
+.gap-1 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.decorationNone {
+  text-decoration: none;
+}
+.m-auto {
+  margin: auto;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
+.hidden{
+  display: none;
+}
+.overflow{
+  overflow: hidden;
+}
+
+.opacity-20 {
+  opacity: 0.2;
+  transition: opacity ease-in-out;
+  transition-duration: 300ms; /* Add 'ms' for milliseconds or 's' for seconds */
+}
+

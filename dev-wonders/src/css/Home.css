@@ -1,0 +1,269 @@
+body {
+  background: rgb(12, 14, 24);
+  background-image: radial-gradient(
+      at 40% 40%,
+      rgba(30, 144, 255, 0.09) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 90% 10%, rgba(255, 105, 180, 0.09) 0px, transparent 50%),
+    radial-gradient(at 50% 95%, rgba(0, 255, 255, 0.09) 0px, transparent 50%),
+    radial-gradient(at 20% 30%, rgba(50, 205, 50, 0.09) 0px, transparent 50%),
+    radial-gradient(at 90% 90%, rgba(255, 255, 0, 0.09) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, rgba(255, 69, 0, 0.09) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, rgba(128, 0, 128, 0.09) 0px, transparent 50%);
+
+  font-family: "Roboto", sans-serif;
+  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&family=McLaren&family=Merriweather:wght@300&family=Montserrat:wght@100;400;700;900&family=Mulish:wght@200;300;400;500;600;700&family=Nunito:wght@300&family=Poppins:wght@100;200;300;400;500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+.reveal{
+  transform: translateY(-10%);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.revealScroll{
+  transform: translateY(-10%);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.active{
+  transform: none;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.outerDiv {
+  width: 58%;
+  margin: auto;
+  color: white;
+  display: grid;
+  margin-top: 2.2rem;
+  margin-bottom: 9.5rem;
+}
+
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.LinksList {
+  list-style-type: none;
+  gap: 2rem;
+}
+
+.LinksListItems {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+  
+}
+.Links {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding-bottom: 15px;
+  position: relative;
+}
+.Links:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.Links:hover:after {
+  width: 100%;
+  left: 0;
+}
+.HomeBody {
+  width: 85%;
+  margin: auto;
+  color: rgb(214, 214, 214);
+  line-height: 2.5;
+  margin-top: 7.5rem;
+  height: 60.4vh;
+  
+}
+
+.GlitchContainer {
+  text-align: center;
+}
+
+.glitch {
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  text-shadow: -0.03em -0.04em 0 #640166, 0.025em 0.04em 0 #777500;
+  animation: glitch 725ms infinite;
+  letter-spacing: 15px;
+}
+
+.glitch span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.glitch span:first-child {
+  animation: glitch 500ms infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+  transform: translate(-0.04em, -0.03em);
+  opacity: 0.75;
+}
+
+.glitch span:last-child {
+  animation: glitch 375ms infinite;
+  clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+  transform: translate(0.04em, 0.03em);
+  opacity: 0.75;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
+  }
+  15% {
+    text-shadow: -0.03em -0.04em 0 #fc00ff, 0.025em 0.04em 0 #fffc00;
+  }
+  16% {
+    text-shadow: 0.025em 0.035em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
+  }
+  49% {
+    text-shadow: 0.025em 0.035em 0 #fc00ff, -0.05em -0.05em 0 #fffc00;
+  }
+  50% {
+    text-shadow: 0.03em 0 0 #fc00ff, 0 -0.04em 0 #fffc00;
+  }
+  99% {
+    text-shadow: 0.03em 0 0 #fc00ff, 0 -0.04em 0 #fffc00;
+  }
+  100% {
+    text-shadow: -, -0.025em -0.04em 0 #fc00ff, -0.04em -0.025em 0 #fffc00;
+  }
+}
+
+.arrow {
+  position: relative;
+  animation: arrowAnimation 1.5s infinite alternate;
+  margin-left: 1rem;
+}
+
+@keyframes arrowAnimation {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 15px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.arrowDiv {
+  color: #fff;
+  text-decoration: none;
+ 
+}
+
+.socialMediaLinks {
+  text-decoration: none;
+  color: white;
+}
+
+.MobileSocialMedia{
+  display: none;
+}
+
+
+
+.intermediateLinks{
+  text-decoration: none;
+  color: white;
+  font-weight:bolder ;
+}
+.HamburgerMenu{
+  display: none;
+}
+.SideBar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(12, 14, 24);
+  z-index: 10;
+}
+.NavBarListMobile{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 5rem;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.XButton{
+  color: white;
+ position: relative;
+ left: 3rem;
+}
+
+
+@media only screen and (max-width: 980px){
+  .outerDiv{
+    width: 90%;
+  }
+  .HomeBody{
+    width: 100%;
+    height: 70%;
+  }
+  .outerDiv{
+    margin-bottom: 3rem;
+  }
+  
+}
+@media only screen and (max-width: 600px){
+  .HamburgerMenu{
+    display: inherit;
+  }
+  .NavBarList{
+    display: none;
+  }
+  .MobileSocialMedia{
+    display: inherit;
+  }
+  .SocialMediaLinksDiv{
+    width: 100%;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(13, 13, 27, 0.39);
+    backdrop-filter: blur(10px);
+    padding: 1rem ;
+  }
+  .WindowsSocialMediaDiv{
+    display: none;
+  }
+}
+

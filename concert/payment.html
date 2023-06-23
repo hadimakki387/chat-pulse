@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&family=Merriweather:wght@300&family=Montserrat:wght@400;900&family=Nunito:wght@300&family=Sacramento&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/69c65b50a4.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <div>
+        <nav class="navbar bg-black navbar-expand-lg navbar-dark ">
+      
+          <a href="" class="navbar-brand ms-5" id="brand">BRAND</a>
+      
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <ul class="navbar-nav ms-auto" id="navlink">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#singers" >BAND</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="" href="#tickets" >TOUR</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#tickets" >TICKETS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact" >CONTACT</a>
+                </li>
+              </ul> 
+      
+            </div>
+      
+        </nav>
+
+        <div class="payment">
+
+           <form action="/thanks" method="post" >
+            <div>
+                <div class="icon-text">
+                    <i class="fa-sharp fa-solid fa-bag-shopping fa-3x payment-text-icon"></i>
+                    <h2 class="payment-text-icon">TICKETS</h2>
+                </div>
+                <div>
+
+
+                <table>
+                    <tr>
+                        <td><i class="fa-solid fa-cart-shopping"></i> Tickets, $15 per person</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="number" placeholder="How Many"  class="payment-input" required></td>
+                    </tr>
+                    <tr>
+                        <td><i class="fa-solid fa-user"></i> Send To</td>
+                    </tr>
+                    <tr><td><input type="email" name="number" placeholder="email" class="payment-input"></td></tr>
+                </table>
+
+                <button type="submit" class="payment-button"><span class="payment-btn-text">PAY</span><i class="fa-sharp fa-solid fa-circle-check"></i></button>
+
+                </div>
+            </div>
+           </form> 
+
+        </div>
+
+
+    <script src="index.js"></script>
+</div>
+</body>
+</html>
