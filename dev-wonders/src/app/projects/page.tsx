@@ -1,5 +1,4 @@
 "use client";
-
 import Cursor from "@/components/Cursor";
 import NavBar from "@/components/Home/NavBar";
 import ProjectsLogic from "@/components/Projects/ProjectsLogic";
@@ -20,9 +19,13 @@ function Projects() {
     }
   }, [selectedProject]);
 
-  const handleProjectSelect = ({ project }: { project: any }) => {
+  const handleProjectSelect = (project: any) => {
+    if (selectedProject) {
+    return;
+  }
     setSelectedProject(project);
   };
+
   function setNull() {
     setSelectedProject(null);
   }
@@ -34,23 +37,31 @@ function Projects() {
 
   useEffect(() => {
     const reveals = document.querySelectorAll(".reveal");
-
+    const windowHeight = window.innerHeight;
     let index = 0;
-
+  
     function reveal() {
-      if (index === reveals.length) {
+      if (index >= reveals.length) {
+        // Stop revealing when all elements have been revealed
         return;
       }
-
-      setTimeout(() => {
+  
+      const revealTop = reveals[index].getBoundingClientRect().top;
+  
+      if (revealTop < windowHeight) {
         reveals[index].classList.add("active");
         index++;
-        reveal();
-      }, 200);
+      }
+  
+      setTimeout(reveal, 200);
     }
-
+  
+    // Call reveal initially to set the initial state
     reveal();
   }, []);
+ 
+  
+
   return (
     <div className="">
       <SideBar sideBar={sideBar} toggleSideBar={toggleSideBar} />
@@ -67,16 +78,21 @@ function Projects() {
           <ProjectsLogic onProjectSelect={handleProjectSelect} />
           <div className="reveal">
             <NextButton URI="/resume" Content="Lets Go To My Resume." />
-            <div className="WindowsSocialMediaDiv">
+            
+          </div>
+          <div className="WindowsSocialMediaDiv">
               <SocialMediaLinks />
             </div>
-          </div>
         </div>
       </div>
 
       <div className={selectedProject ? "ProjectInfo" : ""}>
         {selectedProject && (
-          <ProjectInfo project={selectedProject} setNull={setNull} />
+          <ProjectInfo
+            handleClickAway={() => {}}
+            project={selectedProject}
+            setNull={setNull}
+          />
         )}
       </div>
     </div>

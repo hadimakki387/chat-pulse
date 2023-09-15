@@ -16,7 +16,7 @@ function NextButton({URI,Content}:{URI:string,Content:string}) {
   return (
     <Link href={URI} className="arrowDiv">
           <p
-            className={`flex  ${underline} mt-3`}
+            className={`flex align-center ${underline} mt-3`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >

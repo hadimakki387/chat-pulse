@@ -190,7 +190,9 @@ button:not(:disabled) {
   margin: 5rem 0 2rem 0;
   line-height: 2;
 }
-
+.snipcss-RDU5U{
+  margin-bottom: 3rem;
+}
 @media (max-width:450px) {
   .btn{
     padding: 0.7rem 2rem;

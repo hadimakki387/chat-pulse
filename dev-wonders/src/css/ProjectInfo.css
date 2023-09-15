@@ -149,7 +149,6 @@
     
   
   .pos__relative  { 
-      position: relative; 
       padding: 2rem 2rem 4rem; 
       overflow-x: overlay; 
       max-height: 100%;
@@ -191,7 +190,7 @@
   
   .open__project  { 
       background: var(--sidebar-cta); 
-      position: fixed; 
+      position: absolute; 
       width: 100%; 
       left: 0px; 
       bottom: 0px; 

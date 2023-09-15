@@ -61,7 +61,7 @@ function Resume() {
             <Image
               height={1000}
               width={1000}
-              src="/Cv.png"
+              src="/myCv.png"
               alt="Cv"
               className="resumeImg"
             />
@@ -71,7 +71,7 @@ function Resume() {
           <div>
             <NextButton
               Content="Are you convinced to contact me now ?"
-              URI="/ContactMe"
+              URI="/contactMe"
             />
             <div className="WindowsSocialMediaDiv">
               <SocialMediaLinks />

@@ -35,3 +35,6 @@
   transition-duration: 300ms; /* Add 'ms' for milliseconds or 's' for seconds */
 }
 
+.align-center{
+  align-items: center;
+}

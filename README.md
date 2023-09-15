@@ -1,2 +1,0 @@
-# chat-pulse
-# dev-wonders

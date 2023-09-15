@@ -36,17 +36,7 @@ function ContactMe() {
   const handleMessageChange = ({ e }: { e: any }) => {
     setMessage(e.target.value);
   };
-  function Button() {
-    return (
-      <button
-        className="btn btn-default"
-        type="submit"
-        aria-label="Send Message"
-      >
-        Send Message
-      </button>
-    );
-  }
+
   const [sideBar, setSideBar] = useState(false);
 
   function toggleSideBar() {
@@ -81,9 +71,9 @@ function ContactMe() {
       <NavBar toggleSideBar={toggleSideBar} />
 
       <div className="ContactDiv">
-        <h1 className="AboutTitle">Contact.</h1>
+        <h1 className="AboutTitle reveal">Contact.</h1>
         <article>
-          <p>
+          <p className="reveal">
             shoot me an email directly on
             <b className="MyEmail"> hmakki387@gmail.com</b>
           </p>
@@ -97,7 +87,7 @@ function ContactMe() {
           handleSubmit;
         }}
       >
-        <div className="fields">
+        <div className="fields reveal">
           <div className="field half">
             <input
               type="text"
@@ -112,7 +102,7 @@ function ContactMe() {
               }}
             />
           </div>
-          <div className="field half">
+          <div className="field half reveal">
             <input
               type="email"
               name="email"
@@ -126,7 +116,7 @@ function ContactMe() {
               }}
             />
           </div>
-          <div className="field">
+          <div className="field reveal">
             <textarea
               name="message"
               id="message"
@@ -142,10 +132,17 @@ function ContactMe() {
             ></textarea>
           </div>
         </div>
-
-        <Button />
+        <div className="reveal">
+          <button
+            className="btn btn-default "
+            type="submit"
+            aria-label="Send Message"
+          >
+            Send Message
+          </button>
+        </div>
       </form>
-      <div>
+      <div className="reveal">
         <NextButton Content="Go Back Home" URI="/" />
         <div className="WindowsSocialMediaDiv">
           <SocialMediaLinks />

@@ -31,6 +31,7 @@ html {
   z-index: 1;
   pointer-events: none;
   will-change: transform;
+
 }
 @media (pointer: fine) {
   .cursor {
@@ -228,11 +229,13 @@ html:not(html:hover) .cursor::after {
 @media only screen and (max-width: 470px) {
   .Projects {
     width: 100%;
-    margin: 3rem auto;
+    margin: 7rem auto;
   }
   .ProjectImg {
     width: 100%;
+  
   }
+  
   .projectFigure {
     margin: 0.25rem auto;
   }
@@ -271,14 +274,10 @@ html:not(html:hover) .cursor::after {
 }
 @media only screen and (max-width: 600px) {
   .ProjectInfo {
-    width: 70%;
-  }
-}
-@media only screen and (max-width: 350px) {
-  .ProjectInfo {
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .ProjectInfo {
     font-size: 0.7rem;

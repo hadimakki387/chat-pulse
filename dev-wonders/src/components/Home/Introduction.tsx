@@ -5,10 +5,9 @@ import NextButton from "../NextButton";
 function Introduction() {
   return (
     <div className="GlicthContainer HomeBody ">
-      <AboutMeArticle />
+      <div className="">
+        <AboutMeArticle />
 
-      <div className="reveal">
-        <NextButton URI="/about" Content="See More About Me" />
         <div className="WindowsSocialMediaDiv">
           <SocialMediaLinks />
         </div>

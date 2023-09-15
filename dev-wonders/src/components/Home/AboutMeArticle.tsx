@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import NextButton from "../NextButton";
 
 function Title() {
   return (
@@ -12,7 +13,7 @@ function Title() {
 }
 function Body1() {
   return (
-    <p>
+    <p className="AboutMeArticle">
       Experienced and passionate frontend developer skilled in creating dynamic
       and engaging websites. With a proven track record in successful &nbsp;
       <Link href="/projects" className="intermediateLinks">
@@ -25,7 +26,7 @@ function Body1() {
 }
 function Body2() {
   return (
-    <p>
+    <p className="AboutMeArticle">
       Constantly staying ahead of the curve, I embrace continuous learning and
       keep myself updated with the latest industry trends. By actively exploring
       new technologies, frameworks, and insights, I bring cutting-edge resources
@@ -46,6 +47,8 @@ function AboutMeArticle() {
       </div>
       <div className="reveal">
         <Body2 />
+        <NextButton URI="/about" Content="See More About Me" />
+        
       </div>
     </article>
   );

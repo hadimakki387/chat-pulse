@@ -13,25 +13,27 @@ function Home() {
   }
 
   useEffect(() => {
-    const reveals = document.querySelectorAll('.reveal');
-  
+    const reveals = document.querySelectorAll(".reveal");
+
     let index = 0;
-  
+
     function reveal() {
       if (index === reveals.length) {
         return;
       }
-  
+
       setTimeout(() => {
-        reveals[index].classList.add('active');
+        reveals[index].classList.add("active");
         index++;
         reveal();
       }, 200);
     }
-  
+
     reveal();
   }, []);
+
   
+
 
   return (
     <div className="gradient ">

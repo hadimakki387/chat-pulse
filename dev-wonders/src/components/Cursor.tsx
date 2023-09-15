@@ -4,7 +4,7 @@ const Cursor = () => {
   const cursorRef = useRef(null);
   const [hoveredElement, setHoveredElement] = useState(null);
 
-  const updateProperties = (elem, state) => {
+  const updateProperties = (elem:any, state:any) => {
     elem.style.setProperty("--x", `${state.x}px`);
     elem.style.setProperty("--y", `${state.y}px`);
     elem.style.setProperty("--width", `${state.width}px`);
@@ -13,7 +13,7 @@ const Cursor = () => {
     elem.style.setProperty("--scale", state.scale);
   };
 
-  const createState = (e) => {
+  const createState = (e:any) => {
     const defaultState = {
       x: e.clientX,
       y: e.clientY,
@@ -22,18 +22,15 @@ const Cursor = () => {
       radius: "50%",
     };
 
-    const computedState = {};
+    let computedState = {
+      x:defaultState.x,
+      y:defaultState.y,
+      width:defaultState.width,
+      height:defaultState.height,
+      radius: defaultState.radius,
+    };
+  
 
-    if (hoveredElement != null) {
-      const { top, left, width, height } = hoveredElement.getBoundingClientRect();
-      const radius = window.getComputedStyle(hoveredElement).borderTopLeftRadius;
-
-      computedState.x = left + width / 2;
-      computedState.y = top + height / 2;
-      computedState.width = width;
-      computedState.height = height;
-      computedState.radius = radius;
-    }
 
     return {
       ...defaultState,
@@ -41,12 +38,12 @@ const Cursor = () => {
     };
   };
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = (e:any) => {
     const state = createState(e);
     updateProperties(cursorRef.current, state);
   };
 
-  const handleElementMouseEnter = (elem) => {
+  const handleElementMouseEnter = (elem:any) => {
     setHoveredElement(elem);
   };
 
